@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Pacifico&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="display" disabled>
+        <div class="lista">
+
+            <button onclick="appendValor('7')">7</button>
+            <button onclick="appendValor('8')">8</button>
+            <button onclick="appendValor('9')">9</button>
+            <button onclick="appendOperador('+')">+</button>
+            <button onclick="appendValor('4')">4</button>
+            <button onclick="appendValor('5')">5</button>
+            <button onclick="appendValor('6')">6</button>
+            <button onclick="appendOperador('-')">-</button>
+            <button onclick="appendValor('1')">1</button>
+            <button onclick="appendValor('2')">2</button>
+            <button onclick="appendValor('3')">3</button>
+            <button onclick="appendOperador('/')">/</button>
+            <button onclick="appendValor('0')">0</button>
+            <button onclick="limpiar()">C</button>
+            <button onclick="resultado()">=</button>
+            <button onclick="appendOperador('*')">*</button>
+        </div>
+        <div id="history" class="history">
+            <h3>Historial de cálculos</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.calculadora {
+    width: 100vw; /* Ancho del 100% del viewport */
+    height: 90vh; /* Alto del 100% del viewport */
+    margin: 0; 
+    background-image: url('https://i.pinimg.com/564x/0e/9a/03/0e9a039b517a60aaae310c0d5bed839f.jpg'); 
+    background-position: center; 
+    border-radius: 50px;
+    padding: 30px;
+    
+}
+    
+
+#display {
+    width: calc(100% - 40px);
+    margin-bottom: 30px;
+    background-color: #fffefe;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(4, 10fr);
+    grid-auto-rows: minmax(40px,auto); 
+    gap: 10px;
+    background-size: cover;
+   
+   
+}
+
+button {
+    width: 70px; /* Ancho fijo para los botones */
+    height: 70x; /* Alto fijo para los botones */
+    padding: 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2634ec;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cf1111cb;
+}
+
+.history {
+    margin-top: 20px;
+    background-color: #0f0be785;
+    border-radius: 10px; /* Borde redondeado para el historial */
+    padding: 10px; /* Espacio interno del historial */
+    max-width: 400px; /* Ancho máximo del historial */
+    margin-left: 22px;
+    color: #020202;
+    
+
+}
+
+.history h3 {
+    margin-bottom: 10px;
+   
+}
+
+.history-list li {
+    list-style: none;
+    margin-bottom: 5px;
+ 
+   
+}

@@ -1,0 +1,113 @@
+body {
+    font-family: "Crimson Text", serif;
+    
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/564x/f0/59/06/f05906f829c8428e408153ff1086dc0f.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+    opacity: 0.;
+
+}
+
+header {
+    background-color: #077fff94;
+    color: #181414;
+    padding: 20px;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    color: #a8abd8e1;
+    display: flex; /* Utilizamos flexbox */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    background-color: #50525359;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%; /* Hacer que los inputs y selects ocupen todo el ancho disponible */
+    padding: 10px; /* Aumentar el espacio interno de los inputs */
+    margin-bottom: 25px; /* Agregar espacio entre los inputs */
+    border-radius: 5px; /* Agregar bordes redondeados */
+    border: 1px solid #000000; /* Agregar borde */
+}
+.btn {
+
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.mensaje-especialista {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none; /* Ocultar por defecto */
+}
+
+/* Estilos para el contenido del mensaje del especialista */
+.mensaje-especialista p {
+    margin: 5px 0;
+    color: #333;
+}
+    .mensaje-especialista .btn-cerrar {
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .mensaje-especialista .btn-cerrar:hover {
+        background-color: #0056b3;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.cita {
+    background-color: #acafb87c;
+    border: 3px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.cita p {
+    margin: 5px 0;
+    color: #181414;
+   
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+   
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    
+}

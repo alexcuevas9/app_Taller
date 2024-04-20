@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  color: white; /* Color predeterminado del texto */
+}
+
+#instruction {
+  color: red; /* Cambia el color del texto "Seleccione el número de cartas" */
+}
+
+#stats { /*estadísticas*/
+  color: green; /* Cambia el color del texto "Número de intentos" */
+}
+
+
+#wrapper { /*wrapper=envoltura*/
+  height: calc(100vh - 100px); /* Resta el espacio ocupado por el div de estadísticas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Ajusta el ancho del juego */
+  max-height: 90%; /* Ajusta la altura máxima del juego */
+}
+
+.card { /*tarjeta*/
+  width: 80px; /* Ajusta el ancho de las cartas */
+  height: 120px; /* Ajusta la altura de las cartas */
+  margin: 5px; /* Ajusta el margen entre las cartas */
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card.active {
+  transform: rotateY(180deg);
+}
+
+.card div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Ajusta el radio de borde de las cartas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backface-visibility: hidden;
+  pointer-events: none;
+}
+
+.card .face {
+  background: #05d1fe;
+  transform: rotateY(180deg);
+  color: black;
+  font-size: 2rem; /* Ajusta el tamaño de la fuente de la carta */
+}
+
+.card .back { /*back=atrás*/
+  border: 3px solid #05d1fe;
+  background: url(images/back.png) center / contain no-repeat;
+}
+
+

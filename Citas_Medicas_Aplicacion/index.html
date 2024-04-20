@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Tipo de letra pagina en general-->
+     <link rel="stylesheet" href="estilo.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Titan+One&display=swap" rel="stylesheet">
+     
+</head>
+
+<body>
+    <header>
+       
+        <h1>Citas Médicas A & C</h1>
+    </header>
+    <div class="container">
+        <div id="app">
+            <form id="formulario">
+                <label for="paciente">Paciente:</label>
+                <input type="text" id="paciente" required>
+                <br>
+                
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" required>
+                <br>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" required>
+
+                <label for="especialista">Especialista:</label>
+                <br>
+                
+                <select id="especialista" required>
+                    <option value="Dr. Cuevas">Dr. Cuevas</option>
+                    <option value="Dra. Maria">Dra. Maria</option>
+                    <option value="Dr. Castro">Dr. Castro</option>
+                </select>
+                <br>
+                <br>
+                <button type="submit" class="btn">Agendar Cita</button>
+                <br>
+            </form>
+            <br>
+            <div id="citas">
+            </div>
+            <div class="container">
+            
+                <div id="mensaje-especialista" class="mensaje-especialista"></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
