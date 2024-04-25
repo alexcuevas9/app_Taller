@@ -1,36 +1,99 @@
-.contenedor {
-    max-width: 600px;
-    margin: 0 auto;
+*{
+    top: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("../resource/fondo2.jpg");
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h1{
+    color: aliceblue;
+    margin: 1em;
+}
+
+#ahorcado{
+    height: 200px;
+    width: 200px;
+    left: 0;
+    background-image: url("../resource/el-ahorcado.jpg");
+    border-radius: 2em;
+    margin-top: 2em;
+    
+}
+
+#content-main{
+    background-image: url("../resource/heas.avif");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    margin-top: 5em;
+    width: 60em;
+    height: 40em;
+    background-color: #1e3445;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#resultado{
+    position:fixed;
+    width: 100%;
+    color: aliceblue;
+    
     text-align: center;
-    font-family: Arial, sans-serif;
+    top: 10em;
+}   
+
+#output{
+    color: aliceblue;
+    font-size:3em;
+    margin: 2rem;
+    
 }
 
-#palabra {
-    margin-top: 20px;
-    font-size: 24px;
-}
-
-#intentos {
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-input[type="text"] {
-    margin-top: 10px;
-    padding: 5px;
+#calcular{
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 4px;
+    padding: 12px 20px;
+    text-align: center;
+    display: inline-block;
     font-size: 16px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 8px 16px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     cursor: pointer;
+    text-decoration: none;
+    
+
 }
 
-button:hover {
-    background-color: #0056b3;
+#calcular:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+input[type=text]{
+    
+    width: 40%; 
+    padding: 12px 20px;
+    font-size: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #008CBA;
+    color: white;
+    margin-left: 1em;
+    
+}
+::placeholder{
+    color: wheat;
 }
