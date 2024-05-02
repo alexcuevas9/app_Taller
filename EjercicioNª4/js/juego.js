@@ -2,7 +2,7 @@ String.prototype.replaceAt = function (index, character) { return this.substring
 
 //conjunto de palabras para el juego
 const button = document.querySelector('#calcular');//asignando button a boton calcular
-const palabras = ['javascript', 'html', 'css', 'python', 'java'];
+const palabras = ['javascript', 'html', 'css', 'python', 'java','php','c++'];
 //palabra randon
 let palabra = palabras[Math.floor(Math.random() * palabras.length)];
 //remplazar las palabras por guion y espacio
